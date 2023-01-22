@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace juneOOP2_exercises
 {
-    public class Complex
+    public class Complex : IComparable<Complex>
     {
         private int real;
         private int imaginary;
@@ -20,6 +20,41 @@ namespace juneOOP2_exercises
         {
             this.real = realNumber;
             this.imaginary = 0;
+        }
+
+        public int GetReal()
+        {
+            return this.real;
+        }
+
+        public int GetImaginary()
+        {
+            return this.imaginary;
+        }
+
+        public int CompareTo(Complex? other)
+        {
+            if (this.real < other.real)
+            {
+                return -1;
+            }
+
+            if (this.real > other.real)
+            {
+                return 1;
+            }
+
+            if (this.imaginary < other.imaginary)
+            {
+                return -1;
+            }
+
+            if (this.imaginary > other.imaginary)
+            {
+                return 1;
+            }
+
+            return 0;
         }
 
         public override string ToString()

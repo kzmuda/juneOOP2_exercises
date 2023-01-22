@@ -17,6 +17,7 @@
             */
 
             // Task 2
+            /*
             Rectangle rectangle = new Rectangle(5, 10);
             Console.WriteLine("Show area of rectangle");
             Console.WriteLine(rectangle.GetArea());
@@ -41,6 +42,24 @@
             Console.WriteLine(circle.GetArea());
 
             Console.ReadLine();
+            */
+
+            // Task 3
+            List<Complex> complex = new List<Complex>()
+            {
+                new Complex(5, 3),
+                new Complex(1, 5),
+                new Complex(5),
+                new Complex(2, 2),
+                new Complex(1, 2)
+            };
+
+            complex.Sort();
+
+            foreach (Complex c in complex)
+            {
+                Console.Out.WriteLine(c);
+            }
         }
     }
 }
