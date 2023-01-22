@@ -27,6 +27,32 @@
 
         static void Main(string[] args)
         {
+            MagicArray<int> ma = new MagicArray<int>();
+            ma.Add(1);
+            Console.Out.WriteLine(ma);
+            ma.Add(2);
+            ma.Add(3);
+            Console.Out.WriteLine(ma);
+            ma.Add(4);
+            Console.Out.WriteLine(ma);
+            ma.Add(5);
+            Console.Out.WriteLine(ma);
+            ma.Add(6);
+            Console.Out.WriteLine(ma);
+            ma.Add(7);
+            Console.Out.WriteLine(ma);
+            ma.Add(8);
+            Console.Out.WriteLine(ma);
+
+            MagicArray<string> mas = new MagicArray<string>();
+            mas.Add("aa");
+            mas.Add("b");
+            mas.Add("c");
+            Console.Out.WriteLine(mas);
+            mas.Add("d");
+            Console.Out.WriteLine(mas);
+
+
             // DataStore<int> ds = new DataStore<int>();
             // ds.Data = 10;
             // //ds.Data = "aaaa";
