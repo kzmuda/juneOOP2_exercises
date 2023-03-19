@@ -17,6 +17,7 @@
             foreach (var element in arr)
             {
                 Console.Out.WriteLine(element);
+                Console.Out.WriteLine(element);
             }
         }
 
